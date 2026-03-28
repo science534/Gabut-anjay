@@ -1,0 +1,14 @@
+import { initStars } from './engine.js';
+import { validateForm } from './validator.js';
+
+document.addEventListener('DOMContentLoaded', () => {
+    initStars('universe-bg');
+    
+    const form = document.querySelector('#regForm');
+    form.addEventListener('submit', (e) => {
+        e.preventDefault();
+        if(validateForm(form)) {
+            console.log("Launching to the stars...");
+        }
+    });
+});
