@@ -1,1 +1,0 @@
-# Gabut-anjay
